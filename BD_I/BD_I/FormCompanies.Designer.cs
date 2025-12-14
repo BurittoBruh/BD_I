@@ -39,10 +39,10 @@
             this.txtAddress.Location = new System.Drawing.Point(120, 107); this.txtAddress.Width = 600;
 
             this.btnAdd.Location = new System.Drawing.Point(120, 150); this.btnAdd.Text = "Добавить";
-            this.btnAdd.Click += btnAdd_Click;
+            this.btnAdd.Click += btnAdd_Click; this.btnAdd.Width = 100; this.btnAdd.Height = 30;
 
             this.btnDelete.Location = new System.Drawing.Point(250, 150); this.btnDelete.Text = "Удалить";
-            this.btnDelete.Click += btnDelete_Click;
+            this.btnDelete.Click += btnDelete_Click; this.btnDelete.Width = 100; this.btnDelete.Height = 30;
 
             this.dataGridView1.Location = new System.Drawing.Point(20, 200);
             this.dataGridView1.Size = new System.Drawing.Size(744, 300);

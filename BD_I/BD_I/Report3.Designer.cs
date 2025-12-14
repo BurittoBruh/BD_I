@@ -12,111 +12,138 @@
 
         private void InitializeComponent()
         {
-            this.cmbSpecialty = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.nudYear = new System.Windows.Forms.NumericUpDown();
-            this.label2 = new System.Windows.Forms.Label();
-            this.dtpDate = new System.Windows.Forms.DateTimePicker();
-            this.label3 = new System.Windows.Forms.Label();
-            this.btnShow = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.lblCount = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.nudYear)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.SuspendLayout();
+            cmbSpecialty = new ComboBox();
+            label1 = new Label();
+            nudYear = new NumericUpDown();
+            label2 = new Label();
+            dtpDate = new DateTimePicker();
+            label3 = new Label();
+            btnShow = new Button();
+            dataGridView1 = new DataGridView();
+            lblCount = new Label();
+            ((System.ComponentModel.ISupportInitialize)nudYear).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            SuspendLayout();
             // 
             // cmbSpecialty
             // 
-            this.cmbSpecialty.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbSpecialty.Location = new System.Drawing.Point(150, 15);
-            this.cmbSpecialty.Name = "cmbSpecialty";
-            this.cmbSpecialty.Size = new System.Drawing.Size(320, 23);
-            this.cmbSpecialty.TabIndex = 0;
+            cmbSpecialty.DropDownStyle = ComboBoxStyle.DropDownList;
+            cmbSpecialty.Location = new Point(171, 20);
+            cmbSpecialty.Margin = new Padding(3, 4, 3, 4);
+            cmbSpecialty.Name = "cmbSpecialty";
+            cmbSpecialty.Size = new Size(365, 28);
+            cmbSpecialty.TabIndex = 0;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(12, 18);
-            this.label1.Text = "Специальность:";
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            label1.Location = new Point(14, 24);
+            label1.Name = "label1";
+            label1.Size = new Size(123, 20);
+            label1.TabIndex = 7;
+            label1.Text = "Специальность:";
             // 
             // nudYear
             // 
-            this.nudYear.Location = new System.Drawing.Point(150, 55);
-            this.nudYear.Size = new System.Drawing.Size(80, 23);
-            this.nudYear.Minimum = new decimal(new int[] { 2015, 0, 0, 0 });
-            this.nudYear.Maximum = new decimal(new int[] { 2030, 0, 0, 0 });
-            this.nudYear.TabIndex = 1;
+            nudYear.Location = new Point(171, 73);
+            nudYear.Margin = new Padding(3, 4, 3, 4);
+            nudYear.Maximum = new decimal(new int[] { 2030, 0, 0, 0 });
+            nudYear.Minimum = new decimal(new int[] { 2015, 0, 0, 0 });
+            nudYear.Name = "nudYear";
+            nudYear.Size = new Size(91, 27);
+            nudYear.TabIndex = 1;
+            nudYear.Value = new decimal(new int[] { 2015, 0, 0, 0 });
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 57);
-            this.label2.Text = "Год поступления:";
+            label2.AutoSize = true;
+            label2.Location = new Point(14, 76);
+            label2.Name = "label2";
+            label2.Size = new Size(129, 20);
+            label2.TabIndex = 6;
+            label2.Text = "Год поступления:";
             // 
             // dtpDate
             // 
-            this.dtpDate.Location = new System.Drawing.Point(150, 95);
-            this.dtpDate.Size = new System.Drawing.Size(120, 23);
-            this.dtpDate.TabIndex = 2;
+            dtpDate.Location = new Point(264, 131);
+            dtpDate.Margin = new Padding(3, 4, 3, 4);
+            dtpDate.Name = "dtpDate";
+            dtpDate.Size = new Size(166, 27);
+            dtpDate.TabIndex = 2;
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 98);
-            this.label3.Text = "На дату (защита должна быть до):";
+            label3.AutoSize = true;
+            label3.Location = new Point(14, 131);
+            label3.Name = "label3";
+            label3.Size = new Size(244, 20);
+            label3.TabIndex = 5;
+            label3.Text = "На дату (защита должна быть до):";
             // 
             // btnShow
             // 
-            this.btnShow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(53)))), ((int)(((byte)(69)))));
-            this.btnShow.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnShow.ForeColor = System.Drawing.Color.White;
-            this.btnShow.Location = new System.Drawing.Point(300, 85);
-            this.btnShow.Size = new System.Drawing.Size(140, 40);
-            this.btnShow.Text = "Показать должников";
-            this.btnShow.Click += new System.EventHandler(this.btnShow_Click);
+            btnShow.BackColor = Color.FromArgb(220, 53, 69);
+            btnShow.FlatStyle = FlatStyle.Flat;
+            btnShow.ForeColor = Color.White;
+            btnShow.Location = new Point(454, 115);
+            btnShow.Margin = new Padding(3, 4, 3, 4);
+            btnShow.Name = "btnShow";
+            btnShow.Size = new Size(160, 53);
+            btnShow.TabIndex = 4;
+            btnShow.Text = "Показать должников";
+            btnShow.UseVisualStyleBackColor = false;
+            btnShow.Click += btnShow_Click;
             // 
             // dataGridView1
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 140);
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(760, 320);
-            this.dataGridView1.TabIndex = 3;
+            dataGridView1.AllowUserToAddRows = false;
+            dataGridView1.AllowUserToDeleteRows = false;
+            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridView1.ColumnHeadersHeight = 29;
+            dataGridView1.Location = new Point(14, 187);
+            dataGridView1.Margin = new Padding(3, 4, 3, 4);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.ReadOnly = true;
+            dataGridView1.RowHeadersWidth = 51;
+            dataGridView1.Size = new Size(869, 427);
+            dataGridView1.TabIndex = 3;
             // 
             // lblCount
             // 
-            this.lblCount.AutoSize = true;
-            this.lblCount.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
-            this.lblCount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(53)))), ((int)(((byte)(69)))));
-            this.lblCount.Location = new System.Drawing.Point(12, 470);
-            this.lblCount.Text = "Найдено студентов без оценки: 0";
+            lblCount.AutoSize = true;
+            lblCount.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            lblCount.ForeColor = Color.FromArgb(220, 53, 69);
+            lblCount.Location = new Point(14, 627);
+            lblCount.Name = "lblCount";
+            lblCount.Size = new Size(288, 23);
+            lblCount.TabIndex = 0;
+            lblCount.Text = "Найдено студентов без оценки: 0";
             // 
             // Report3
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(784, 501);
-            this.Controls.Add(this.lblCount);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.btnShow);
-            this.Controls.Add(this.dtpDate);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.nudYear);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.cmbSpecialty);
-            this.Controls.Add(this.label1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Name = "Report3";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Отчёт 3: Студенты без оценки на дату";
-            this.Load += new System.EventHandler(this.Report3_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.nudYear)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(896, 668);
+            Controls.Add(lblCount);
+            Controls.Add(dataGridView1);
+            Controls.Add(btnShow);
+            Controls.Add(dtpDate);
+            Controls.Add(label3);
+            Controls.Add(nudYear);
+            Controls.Add(label2);
+            Controls.Add(cmbSpecialty);
+            Controls.Add(label1);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            Margin = new Padding(3, 4, 3, 4);
+            Name = "Report3";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Отчёт 3: Студенты без оценки на дату";
+            Load += Report3_Load;
+            ((System.ComponentModel.ISupportInitialize)nudYear).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         private System.Windows.Forms.ComboBox cmbSpecialty;

@@ -40,7 +40,7 @@
             this.label4.Location = new System.Drawing.Point(20, 125); this.label4.Text = "Дата окончания:";
             this.dtpEnd.Location = new System.Drawing.Point(120, 122); this.dtpEnd.Format = DateTimePickerFormat.Short;
 
-            this.label5.Location = new System.Drawing.Point(20, 160); this.label5.Text = "Оценка (0 = не выставлена):";
+            this.label5.Location = new System.Drawing.Point(20, 160); this.label5.Text = "Оценка";
             this.nudGrade.Location = new System.Drawing.Point(200, 157); this.nudGrade.Minimum = 0; this.nudGrade.Maximum = 5;
 
             this.btnSave.Location = new System.Drawing.Point(120, 200); this.btnSave.Size = new System.Drawing.Size(120, 35);
